@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introducción al DOM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="titulo">Introducción al DOM</h1>
+
+    <p id="descripcion">
+        Este texto será manipulado con JavaScript.
+    </p>
+
+    <hr>
+
+    <h2>1. Cambiar contenido</h2>
+
+    <button id="btnCambiarTexto">
+        Cambiar texto
+    </button>
+
+    <hr>
+
+    <h2>2. Cambiar estilos</h2>
+
+    <button id="btnCambiarColor">
+        Cambiar color
+    </button>
+
+    <hr>
+
+    <h2>3. Manipular clases</h2>
+
+    <button id="btnClase">
+        Activar / quitar clase
+    </button>
+
+    <hr>
+
+    <h2>4. Leer datos de un input</h2>
+
+    <input id="nombre" type="text" placeholder="Escribe tu nombre">
+
+    <button id="btnSaludar">
+        Saludar
+    </button>
+
+    <p id="saludo"></p>
+
+    <hr>
+
+    <h2>5. Evento input</h2>
+
+    <input id="textoTiempoReal" type="text" placeholder="Escribe algo">
+
+    <p id="resultadoTiempoReal"></p>
+
+    <hr>
+
+    <h2>6. Mostrar y ocultar</h2>
+
+    <button id="btnMostrarOcultar">
+        Mostrar / Ocultar
+    </button>
+
+    <p id="mensajeOculto">
+        Este mensaje puede desaparecer.
+    </p>
+
+    <hr>
+
+    <h2>7. Formulario</h2>
+
+    <form id="formulario">
+
+        <input id="correo" type="email" placeholder="Correo electrónico">
+
+        <button type="submit">
+            Enviar formulario
+        </button>
+
+    </form>
+
+    <p id="resultadoFormulario"></p>
+
+    <hr>
+
+    <h2>8. Crear elementos e hijos</h2>
+
+    <button id="btnCrear">
+        Crear elemento hijo
+    </button>
+
+    <div id="contenedor">
+        <h3>Elementos creados dinámicamente</h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

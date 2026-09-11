@@ -1,0 +1,9 @@
+.destacado {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+}
+
+.oculto {
+  display: none;
+}
