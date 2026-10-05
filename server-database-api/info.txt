@@ -1,0 +1,4 @@
+mongodb+srv://<db_username>:<db_password>@cluster0.rnddyns.mongodb.net/?appName=Cluster0
+
+jcmc
+jcmc_db
