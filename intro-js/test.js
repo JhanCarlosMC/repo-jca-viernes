@@ -31,3 +31,7 @@ contenedor.innerHTML = '<h3>Subtitulo Generado</h3> <a href="#">Enlace</a>';
 tituloPrincipal.style.color = "#ff0000";
 tituloPrincipal.style.fontSize = "50px";
 tituloPrincipal.style.border = "2px solid black";
+
+if(edadusuario < 18){
+    console.log("No puede reservar");
+}

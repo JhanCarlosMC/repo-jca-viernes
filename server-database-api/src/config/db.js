@@ -9,7 +9,6 @@ async function conectarBD(){
         console.log("NO Se logro conectar a la BD de Mongo: ", error.message);
         process.exit(1);
     }
-
 }
 
 module.exports = conectarBD;
