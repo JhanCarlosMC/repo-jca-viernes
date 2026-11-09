@@ -1,0 +1,107 @@
+.gestion-page {
+  min-height: calc(100vh - 130px);
+}
+
+.gestion-form-section {
+  width: min(100% - 40px, 900px);
+  margin: 36px auto 0;
+  padding: clamp(22px, 5vw, 36px);
+  border: 1px solid #f0dfd3;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #fff 0%, #fff8f2 100%);
+  box-shadow: 0 8px 24px rgb(92 55 35 / 8%);
+}
+
+.gestion-form-section__title,
+.gestion-products__title {
+  margin: 0 0 22px;
+  color: #59392e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.gestion-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+}
+
+.gestion-form__field {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.gestion-form__label {
+  color: #59392e;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.gestion-form__input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #e5c1ad;
+  border-radius: 8px;
+  background: #fff;
+  color: #35251e;
+  font: inherit;
+}
+
+.gestion-form__input:focus-visible {
+  border-color: #8c4f38;
+  outline: 3px solid rgb(201 121 87 / 25%);
+  outline-offset: 1px;
+}
+
+.gestion-form__submit {
+  justify-self: start;
+  align-self: end;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #8c4f38;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 180ms ease;
+}
+
+.gestion-form__submit:hover {
+  background: #70402f;
+}
+
+.gestion-form__submit:focus-visible {
+  outline: 3px solid #c97957;
+  outline-offset: 3px;
+}
+
+.gestion-products {
+  width: min(100% - 40px, 1120px);
+  margin: 40px auto;
+}
+
+.gestion-products__title {
+  margin-bottom: 20px;
+}
+
+.gestion-products__grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+}
+
+@media (max-width: 640px) {
+  .gestion-form {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gestion-form__submit {
+    transition: none;
+  }
+}

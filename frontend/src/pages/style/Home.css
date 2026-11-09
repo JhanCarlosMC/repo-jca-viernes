@@ -1,0 +1,297 @@
+.home {
+  width: min(100% - 40px, 1120px);
+  margin: 36px auto 64px;
+}
+
+.home__hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 390px;
+  padding: clamp(40px, 8vw, 88px);
+  border-radius: 24px;
+  background:
+    radial-gradient(ellipse at 90% 10%, rgb(255 235 215 / 20%), transparent 34%),
+    linear-gradient(135deg, #59392e, #8c4f38);
+  box-shadow: 0 16px 36px rgb(92 55 35 / 14%);
+  color: #fffaf5;
+}
+
+.home__hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+}
+
+.home__eyebrow {
+  margin: 0 0 14px;
+  color: #f0c6ad;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.home__title {
+  max-width: 720px;
+  margin: 0 0 18px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.3rem, 6vw, 4.25rem);
+  line-height: 1.12;
+}
+
+.home__lead {
+  max-width: 600px;
+  margin: 0;
+  color: #f5e5d9;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.home__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: #fffaf5;
+  color: #70402f;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.home__button:hover {
+  transform: translateY(-2px);
+  background: #f7e8de;
+  box-shadow: 0 8px 18px rgb(40 20 12 / 16%);
+}
+
+.home__button:focus-visible,
+.home__text-link:focus-visible {
+  outline: 3px solid #e5b79e;
+  outline-offset: 4px;
+}
+
+.home__hero-decoration {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 40%;
+  pointer-events: none;
+}
+
+.home__decoration-sparkle {
+  position: absolute;
+  top: 20%;
+  right: 24%;
+  color: rgb(255 235 215 / 78%);
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.home__decoration-circle {
+  position: absolute;
+  right: -100px;
+  bottom: -180px;
+  width: clamp(250px, 38vw, 440px);
+  aspect-ratio: 1;
+  border: 1px solid rgb(255 250 245 / 22%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 28px rgb(255 250 245 / 5%),
+    0 0 0 58px rgb(255 250 245 / 4%);
+}
+
+.home__occasions {
+  padding: clamp(56px, 8vw, 88px) 0;
+}
+
+.home__section-heading {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.home__eyebrow--dark {
+  color: #a45e42;
+}
+
+.home__section-title {
+  margin: 0 0 12px;
+  color: #59392e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.home__description {
+  margin: 0;
+  color: #806e65;
+  line-height: 1.75;
+}
+
+.home__occasion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.home__occasion-card {
+  padding: 26px;
+  border: 1px solid #f0dfd3;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #fff 0%, #fff8f2 100%);
+  box-shadow: 0 8px 24px rgb(92 55 35 / 6%);
+}
+
+.home__occasion-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+  place-items: center;
+  border-radius: 14px;
+  background: #f7e8de;
+  color: #8c4f38;
+  font-size: 1.4rem;
+}
+
+.home__occasion-title {
+  margin: 0 0 8px;
+  color: #59392e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.2rem;
+}
+
+.home__occasion-description {
+  margin: 0;
+  color: #806e65;
+  line-height: 1.65;
+}
+
+.home__about {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(20px, 5vw, 48px);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(28px, 6vw, 52px);
+  border: 1px solid #f0dfd3;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #fff 0%, #fff8f2 100%);
+  box-shadow: 0 8px 24px rgb(92 55 35 / 8%);
+}
+
+.home__about-mark {
+  display: grid;
+  width: clamp(56px, 9vw, 88px);
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 22px;
+  background: #f7e8de;
+  color: #c97957;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.home__about-content .home__section-title {
+  max-width: 600px;
+}
+
+.home__text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: #8c4f38;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home__text-link:hover {
+  color: #59392e;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.home__closing {
+  margin-top: clamp(56px, 8vw, 88px);
+  padding: clamp(36px, 7vw, 64px) 24px;
+  border-radius: 20px;
+  background:
+    radial-gradient(ellipse at 90% 0%, rgb(255 235 215 / 18%), transparent 35%),
+    linear-gradient(135deg, #70402f, #59392e);
+  color: #fffaf5;
+  text-align: center;
+}
+
+.home__closing-title {
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  line-height: 1.2;
+}
+
+.home__button--light {
+  border-color: #e5c1ad;
+}
+
+@media (max-width: 700px) {
+  .home__hero {
+    min-height: 350px;
+    padding: 40px 30px;
+  }
+
+  .home__hero-decoration {
+    width: 35%;
+    opacity: 0.65;
+  }
+
+  .home__occasion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home__occasion-card {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    width: min(100% - 28px, 1120px);
+    margin-top: 20px;
+  }
+
+  .home__hero {
+    min-height: 0;
+    padding: 40px 24px;
+  }
+
+  .home__hero-decoration {
+    opacity: 0.35;
+  }
+
+  .home__about {
+    grid-template-columns: 1fr;
+  }
+
+  .home__about-mark {
+    width: 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home__button {
+    transition: none;
+  }
+
+  .home__button:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,33 @@
+.site-header {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(48px, 8vw, 84px) 24px;
+  background:
+    radial-gradient(ellipse at 85% 15%, rgb(255 235 215 / 14%), transparent 35%),
+    linear-gradient(135deg, #59392e, #8c4f38);
+  color: #fffaf5;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0 0 14px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.site-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #f5e5d9;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.7;
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding-inline: 20px;
+  }
+}
